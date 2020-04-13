@@ -9,7 +9,7 @@ Create Guessing Game by
 by Arisa Pangpeng 6110545678
 
 Status : incomplete
-- Cannot update the hidden word with correct answer 
+- Cannot update the hidden words with correct answer 
 
 ## Installing
 ```
