@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Guessing Game</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <link rel="stylesheet" href="/style.css">
+   </head>
+   <body ng-app="GuessingGame" ng-controller="GameController">
+      <h1>Guessing Game</h1>
+      <div class="container">
+         <section class="gameInfo">
+            <div><span id="hiddenWord">{{displayWord}}</span></div>
+            <section class="inputs" id="showinput">
+               <div>
+                  <div><input type="text" name="guess" ng-model="input.letter" class="form-control form-control-sm" type="text" placeholder="only letters a - z">
+                     <br>
+                     <button class="btn btn-info" ng-click="letterChosen()" >Submit</button>
+                     <br><h2 id="invalid"></h2>
+                  </div>
+               </div>
+            </section>
+            <br>
+            <div>
+               Incorrect Guesses Left : {{guessesLeft}}
+            </div>
+            <div>
+               </span>
+            </div>
+            <div>
+            </div>
+            <h2 id="winLose"></h2>
+            <br><a style="display: none;" id="newGame" href="/">Start New Game</a>
+         </section>
+         </section>
+      </div>
+      <script src="app.js"></script>
+   </body>
+</html>
